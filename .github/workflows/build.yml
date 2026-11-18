@@ -21,10 +21,10 @@ jobs:
 
       - name: 将镜像导出为 tar 文件
         run: |
-          docker save lunar-seg-app:v1 -o lunar_seg_submission.zip
+          docker save lunar-seg-app:v1 -o lunar_seg_submission.tar
 
       - name: 上传打包好的 tar 文件作为构件
         uses: actions/upload-artifact@v4
         with:
           name: lunar_seg_submission
-          path: lunar_seg_submission.zip
+          path: lunar_seg_submission.tar
