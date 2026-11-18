@@ -21,4 +21,4 @@ RUN pip install --no-cache-dir -r requirements.txt -i https://pypi.tuna.tsinghua
 COPY . /workspace/
 
 # 容器启动时默认执行的推理命令
-CMD ["python", "predict.py"]
+CMD ["python"]
